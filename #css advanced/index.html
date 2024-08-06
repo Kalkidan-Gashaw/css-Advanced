@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Advanced</title>
+    <style>
+        form{
+            padding: 20px 10px;
+            width: 600px;
+            background-color: lightgray;
+            border-radius: 5px;
+            margin-left: 10px;
+           
+            }
+       
+        input{
+            width:580px;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: none;
+            outline: none;
+        }
+        select{
+            display: block;
+            margin-bottom: 25px;
+            width:580px;
+            height: 40px;
+            border-radius: 5px;
+            border: 2px solid black;
+            padding-left: 15px;
+        }
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            margin-bottom: 10px;
+            text-align: center;
+            
+        }
+        input[type="text"]{
+            width:565px;
+            height: 40px; 
+        }
+        .drop{
+            width:200px;
+            height: 100px;
+            background-color: green;
+            margin-top: 20px;
+            margin-left: 10px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .dp{
+            position: relative;
+            top: 30px;
+        }
+        .dd{
+            width:300px;
+            height:150px;
+            background-color: lightgray;
+            display:none;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+        .dd ul{
+            margin: 0px;
+        }
+        .dd li{
+           
+            list-style-type: none;
+            
+            font-size: 30px;
+            padding: 5px;
+            color:black;
+        }
+        .dd a{
+            text-decoration: none;
+            color: black;
+        }
+      
+        .drop:hover + .dd{
+            display: block;
+        }
+        h2{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <label for="fname">First Name</label><br><br>
+        <input type="text" id="fname" placeholder="Your name.."><br><br>
+        <label for="lname">Last Name</label><br><br>
+        <input type="text" id="lname" placeholder="Your last name.."><br><br>
+        <label for="country">Country</label><br><br>
+        <select id="country"><br>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+            <option value="itally">Italy</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="south Africa">south Africa</option>
+
+        </select>
+        <input type="submit">
+        
+    </form>
+    <h2>Dropdown List</h2>
+    <div class="drop">
+        <p class="dp">Dropdown</p>
+        
+    </div>
+    
+    <div class="dd">
+        <ul >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+    
+        </ul>
+    </div>
+    
+   
+</body>
+</html>
